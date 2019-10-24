@@ -6,12 +6,135 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset='utf-8'>
+        <title>title</title>
+       
     </head>
     <body>
-        <h1>Bienvenida ficha </h1>
-        <h1>1967211 </h1>
+             
     </body>
+    <script type="text/javascript">
+    //comentario por línea
+    /*
+     * ESTRUCTURAS DE CONTROÑ TIPO DECISION O CONDISIONALES
+     */
+    // uso del if
+    
+    var mes = 9
+    if(mes == 9) {
+       console.log('Es Septiembre')
+    } else if (mes ==10 || mes == 11 || mes == 12){
+       console.log('Es el cuarto trimestre')
+    } else {
+       console.log('Está ubicado entre el I y III trimestre') 
+    }
+     //USO DEL SWITCH
+    
+    switch(mes){
+        case 8: 
+            console.log('Es agosto')
+            break;
+        case 10:
+            console.log('Es octubre')
+            var dia=-1
+            switch (dia) {
+                case 21:
+                    console.log('Es 21 de octubre')
+                    break;
+                case 22:
+                    console.log('Es 22 de octubre')
+                    break;
+                default:
+                    console.log('No corresponde a ningún día')
+                    break;
+            }
+            break;
+    default:
+        console.log('No corresponde a ningún mes')
+            break;
+    }          
+    // fin estructuras de control
+   
+    // ESTRUCTURAS DE CONTROL BUCLES O CICLICAS
+    
+    /*
+     * *while
+     */
+    
+    var i=0
+    
+    while (i<10) {
+        
+        console.log ('desde bucle:  ' +i)
+        i++
+        
+    }
+    
+    /*
+     * *do while
+     */    
+     var j=0    
+     do { console.log ('desde bucle do-while:  ' +i)
+           j++
+       }while (j<10) 
+      
+    /*
+     * *for
+     */
+    for (var i=0; i<10; i++) {
+         console.log ('desde bucle:  ' +i)
+     }
+   
+    
+     /*
+     * *for each
+     */   
+      var nombre ='Carlos'
+     for (i in nombre) {
+         console.log(i+nombre[i])
+         
+     }
+    var apellido="Montes"
+    var arreglo =[
+        ['Carlos', 2, 3],
+        ['Cristian','Camilo',23.5],
+        [2.3, 4,5]
+        
+    ]
+    
+    //si encuentra Camilo o Carlos lo almacena en un nuevo arreglo con el nombre aprendices 
+     //si encuentra Carlos imprime "El vocero es " + variable [posicion]+apellido
+     //número sacan promedio usando typeof
+     
+     for (fila in arreglo){
+         //console.log(arreglo[fila])
+         
+       for (columna in arreglo[fila]){
+            //console.log(arreglo[fila][columna])
+            if (typeof(arreglo[fila][columna]=='string')){
+                if(arreglo [fila][columna]=='Carlos'){
+                    console.log("El vocero es:"+arreglo[fila][columna]+" "+apellido)
+                }
+                console.log(arreglo[fila][columna] )
+                aprendices.push(arreglo[fila])
+                
+            }else{
+                var promedio=arreglo[indice][columna];
+                
+            }
+       }  
+      
+     }
+     
+     
+  //   
+        
+    
+        
+    
+    
+    </script>    
+   
+  
+    
 </html>
