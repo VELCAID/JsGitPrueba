@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">
+    //Todo arreglo tiene un indice
+    var arreglo=[1,6,7,8,9,8,7,11,3,4,9,33,19,17,18]
+    var arregloNuevo=[]
+    console.log(arreglo)
+    console.log(arreglo.length)
+    //arreglo[3]=123
+    console.log(arreglo)
+    
+    
+    for (var indice=0; indice<arreglo.length; indice++){
+       // console.log("indice: "+indice +"  Elemento: "+arreglo[indice])
+        
+        var numero=0;
+        for (var divisor=1; divisor<=arreglo[indice]; divisor++){
+                    
+            if (arreglo[indice]%divisor == 0){
+                numero++;
+            }
+        }
+        
+        if( numero<=2){
+            arregloNuevo.push(arreglo[indice]);
+        }
+        
+    }
+    
+    console.log(arregloNuevo);
+    
+  
+    
+    //de la variable arreglo extraer en un nuevo arreglo los numeros primos
+    //es divisible por el mismo y por la unidad y el residuo debe ser cero
+    
+    //eje: 8 8%1= el residuo es cero 8%2=0 8%3=2 8%4=0
+    
+    //eje: 3 3%1=0  3%2=1  3%3=0
+    
+    //resp:1,7,7,11,3,19,17    
+    
+    
+</script>
+
+        
+        
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
+
